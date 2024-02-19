@@ -94,28 +94,12 @@ class FaceDetector:
 __init__(self, encodings_path): Initializes the class with the path to the saved face encodings.
 detect_faces(self, image_path): Loads an image from the specified path and detects faces within it, using pre-generated encodings for recognition.
 
-## Class: `AttendanceRecorder`
-
-```python
-class AttendanceRecorder:
-    def __init__(self, output_path):
-        self.output_path = output_path
-
-    def record_attendance(self, recognized_faces):
-        # Code to update attendance records based on recognized faces.
-```
-**Purpose:** Manages the recording of attendance based on recognized faces.
-**Methods:**
-__init__(self, output_path): Initializes the class with the path to the directory where attendance records are stored.
-record_attendance(self, recognized_faces): Updates the attendance records based on the list of recognized faces. This could involve marking individuals as present in a database or a file.
-
 ## Integration and Workflow
 
-The classes **FaceEncoder**, **FaceDetector**, and **AttendanceRecorder** work together within the detector.py script to facilitate the end-to-end process of automatic attendance tracking. Here's a simplified workflow:
+The classes **FaceEncoder**, **FaceDetector* work together within the detector.py script to facilitate the end-to-end process of automatic attendance tracking. Here's a simplified workflow:
 
 **Encoding Creation:** FaceEncoder processes training images to create and store face encodings.
 **Face Detection:** FaceDetector uses these encodings to detect and recognize faces in new images.
-**Attendance Recording:** AttendanceRecorder takes the list of recognized faces and updates the attendance records accordingly.
 
 ## Customization
 You can customize the system by modifying the following settings in `detector.py`:
