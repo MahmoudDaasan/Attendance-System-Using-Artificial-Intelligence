@@ -107,7 +107,4 @@ You can customize the system by modifying the following settings in `detector.py
 - `BOUNDING_BOX_COLOR` - Color of the bounding box around recognized faces.
 - `TEXT_COLOR` - Color of the text used to label recognized faces.
 
-## Contributing
-Contributions to this project are welcome! Please fork the repository, make your changes, and submit a pull request.
 
-Make sure to replace [repository-url] with the actual URL of your GitHub repository.
